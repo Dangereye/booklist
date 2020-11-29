@@ -2,9 +2,12 @@
 @import 'partials/variables';
 @import 'partials/typography';
 @import 'partials/buttons';
+@import 'partials/forms';
 @import 'partials/global';
 
 // Components
 @import 'components/App';
 @import 'components/Navbar';
+@import 'components/Statusbar';
+@import 'components/Booklist';
 @import 'components/Footer';

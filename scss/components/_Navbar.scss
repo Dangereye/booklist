@@ -1,15 +1,20 @@
 nav {
-  padding: 2rem 0;
+  padding: 1rem 0;
+  background-color: $text-color-dark;
+  color: $text-color-light;
 
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .logo {
+    padding: 1rem 0;
   }
 
   ul {
+    padding: 1rem 0;
     display: flex;
     gap: 1.6rem;
   }

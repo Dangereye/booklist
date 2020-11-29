@@ -1,5 +1,7 @@
 footer {
   padding: 2rem 0;
+  background-color: $text-color-dark;
+  color: $text-color-light;
 
   p.copyright {
     font-size: clamp(1.4rem, 2.4vw, 1.6rem);

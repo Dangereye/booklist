@@ -1,10 +1,9 @@
 import React from 'react'
-
 const Navbar = () => {
     return (
         <nav>
             <div className="container">
-                <a className="logo">Booklist</a>
+                <h3 className="logo">Booklist</h3>
                 <ul>
                     <li>link</li>
                     <li>link</li>

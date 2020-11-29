@@ -1,0 +1,42 @@
+.book-list {
+  ul {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  li.book {
+    display: flex;
+    background-color: $light-grey;
+    cursor: pointer;
+
+    .book-highlight {
+      width: 0;
+      background-color: $delete-color;
+      transition: width 0.3s ease;
+    }
+
+    .book-info {
+      flex: 1;
+      padding: 1rem 2rem;
+      text-transform: capitalize;
+
+      .book-title {
+        font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .book-author {
+        font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+        color: lighten($text-color-dark, 50%);
+      }
+    }
+  }
+  .book:hover {
+    .book-highlight {
+      width: 1rem;
+    }
+  }
+}

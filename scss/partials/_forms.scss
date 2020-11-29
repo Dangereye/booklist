@@ -1,0 +1,33 @@
+form {
+  padding: 4rem;
+  background-color: $grey;
+  > *:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+  .input-group {
+  }
+  label {
+    display: block;
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  input {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    border: none;
+  }
+  ::placeholder {
+    color: lighten($text-color-dark, 50%);
+  }
+
+  input[type='text'] {
+    width: 100%;
+    padding: 1rem;
+    color: $text-color-dark;
+  }
+  input[type='submit'] {
+    margin-top: 1.6rem;
+    outline: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,12 @@
+.status-bar {
+  padding: 1rem 0;
+  background-color: $light-grey;
+
+  .status {
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+    span {
+      font-weight: 600;
+      color: $text-color-status;
+    }
+  }
+}
