@@ -9,15 +9,12 @@
   li.book {
     display: flex;
     background-color: $light-grey;
-    cursor: pointer;
-
-    .book-highlight {
-      width: 0;
-      background-color: $delete-color;
-      transition: width 0.3s ease;
-    }
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    overflow: hidden;
 
     .book-info {
+      position: relative;
       flex: 1;
       padding: 1rem 2rem;
       text-transform: capitalize;
@@ -32,6 +29,29 @@
         font-size: clamp(1.4rem, 2.5vw, 1.6rem);
         color: lighten($text-color-dark, 50%);
       }
+
+      .book-delete {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translate(5rem, -50%);
+        color: $delete-color;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+
+  li.book.active {
+    border-color: $delete-color;
+    color: $delete-color;
+
+    .book-author {
+      color: $delete-color;
+    }
+
+    .book-delete {
+      transform: translate(0, -50%);
     }
   }
   .book:hover {

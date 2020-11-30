@@ -1,4 +1,5 @@
 form {
+  margin-top: 2rem;
   padding: 4rem;
   background-color: $grey;
   > *:not(:last-child) {
@@ -15,6 +16,7 @@ form {
   input {
     font-size: clamp(1.6rem, 2.5vw, 2rem);
     border: none;
+    outline-color: $primary-color;
   }
   ::placeholder {
     color: lighten($text-color-dark, 50%);
